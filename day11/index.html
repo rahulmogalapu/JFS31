@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: red;
+        }
+        .first:hover{
+            background-color: blue;
+        }
+        .styled-button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            border:2px solid green;
+            transition: background-color 3s ease 5s , border-radius 2s ease;
+
+        }
+        .styled-button:hover{
+            background-color: darkgoldenrod;
+            border-radius: 20px;
+        }
+        .styled-button:focus{
+            outline: none;
+            background-color: greenyellow;
+        }
+        .styled-button:active{
+            background-color: violet;
+        }
+        li:nth-child(even)
+        {
+            background-color: red;
+        }
+        button::first-letter{
+            color: blueviolet;
+        }
+        button::before{
+            content: "$";
+        }
+        button::after{
+            content: "$";
+        }
+        li::selection{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "first">prabhas</div> 
+    <button class = "styled-button">Visit Example.com</button>
+    <ul>
+        <li>asdfgh</li>
+        <li>asdfgh</li>
+        <li>asdfgh</li>
+        <li>asdfgh</li>
+        <li>asdfgh</li>
+        <li>asdfgh</li>
+    </ul>
+</body>
+</html>

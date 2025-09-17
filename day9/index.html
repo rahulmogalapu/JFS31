@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,minmax(100px,300px));
+            /* grid-template-columns: repeat(auto-fill); */
+            /* grid-template-columns: repeat(auto-fitminmax(100px,300px)); */
+            grid-template-rows:100px 100px 100px ;
+            
+            gap: 20px;
+        }
+        .child{
+            background-color: rgb(255,255,2,0.5);
+            display: grid;
+            place-items: center;
+           
+        }
+        .child1{
+            background-color: rgb(110, 226, 43);
+             display: grid;
+            place-items: center;
+           grid-column: 1/3;
+        }
+        .child2{
+            background-color: #1518b7 ;
+             display: grid;
+            place-items: center;
+           grid-column: 1/3;
+        }
+       .main{
+            display: flex;
+            gap:30px;
+            /* gap: 20px;
+            border: 2px double forestgreen;
+            padding: 30px;
+         border: radius 50px; ; */
+        } 
+        .chin{
+              display: flex;
+            gap: 20px;
+            border: 2px double forestgreen;
+            padding: 30px;
+         border-radius: 50px;
+         background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="child1">rahul</div>
+        <div class="child">rahul</div>
+        <div class="child">rahul</div>
+        <div class="child">rahul</div>
+        <div class="child2">rahul</div>
+        <div class="child">rahul</div>
+    </div> -->
+ <div class="main">
+ <div class="chin">rahul</div>
+ <div class="chin">rahul</div>
+ <div class="chin">rahul</div>
+ </div>
+</body>
+</html>
